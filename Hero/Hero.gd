@@ -5,6 +5,13 @@ const WALK_SPEED = 200
 
 var velocity = Vector2()
 
+func _ready():
+	$Area2D.connect("area_entered", self, "onCollect");
+
+func onCollect(body):
+	if (!body.is_in_group("diamond")): return;
+	body.collect();
+
 func _physics_process(delta):
 	velocity.y += delta * GRAVITY
 	if Input.is_action_pressed("ui_left"):
