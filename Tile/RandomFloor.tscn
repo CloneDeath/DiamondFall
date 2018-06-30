@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Tile/RandomFloor.gd" type="Script" id=1]
 [ext_resource path="res://Tile/Ground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Tile/platformPack_tile004.png" type="Texture" id=3]
+[ext_resource path="res://Tile/Wall.tscn" type="PackedScene" id=4]
 
 [node name="RandomFloor" type="Node2D" index="0"]
 
@@ -10,7 +12,12 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Ground0" parent="." index="0" instance=ExtResource( 2 )]
 
+editor/display_folded = true
 _sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Sprite" parent="Ground0" index="0"]
+
+texture = ExtResource( 3 )
 
 [node name="Ground1" parent="." index="1" instance=ExtResource( 2 )]
 
@@ -77,6 +84,41 @@ position = Vector2( 960, 0 )
 
 [node name="Ground16" parent="." index="16" instance=ExtResource( 2 )]
 
+editor/display_folded = true
 position = Vector2( 1024, 0 )
 
+[node name="Sprite" parent="Ground16" index="0"]
 
+texture = ExtResource( 3 )
+
+[node name="Walls" type="Node2D" parent="." index="17"]
+
+editor/display_folded = true
+
+[node name="Wall" parent="Walls" index="0" instance=ExtResource( 4 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Wall2" parent="Walls" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 0, -128 )
+
+[node name="Wall3" parent="Walls" index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 0, -192 )
+
+[node name="Wall4" parent="Walls" index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 1024, -64 )
+
+[node name="Wall5" parent="Walls" index="4" instance=ExtResource( 4 )]
+
+position = Vector2( 1024, -128 )
+
+[node name="Wall6" parent="Walls" index="5" instance=ExtResource( 4 )]
+
+position = Vector2( 1024, -192 )
+
+
+[editable path="Ground0"]
+[editable path="Ground16"]

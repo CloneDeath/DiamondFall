@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Hero/Hero.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tile/RandomFloor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Diamond/Diamond.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Game_Music_01.wav" type="AudioStream" id=4]
 
 [node name="Node" type="Node" index="0"]
 
@@ -72,5 +74,46 @@ position = Vector2( 0, 2368 )
 [node name="SingleHoleFloor9" parent="." index="9" instance=ExtResource( 2 )]
 
 position = Vector2( 0, 2624 )
+
+[node name="Diamond" parent="." index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 192, 512 )
+
+[node name="Diamond2" parent="." index="11" instance=ExtResource( 3 )]
+
+position = Vector2( 768, 512 )
+
+[node name="Diamond3" parent="." index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 320, 768 )
+
+[node name="Diamond4" parent="." index="13" instance=ExtResource( 3 )]
+
+position = Vector2( 512, 1024 )
+
+[node name="Diamond5" parent="." index="14" instance=ExtResource( 3 )]
+
+position = Vector2( 320, 1280 )
+
+[node name="Diamond6" parent="." index="15" instance=ExtResource( 3 )]
+
+position = Vector2( 768, 1280 )
+
+[node name="Diamond7" parent="." index="16" instance=ExtResource( 3 )]
+
+position = Vector2( 512, 1536 )
+
+[node name="Diamond8" parent="." index="17" instance=ExtResource( 3 )]
+
+position = Vector2( 320, 1792 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="18"]
+
+stream = ExtResource( 4 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
 
 
