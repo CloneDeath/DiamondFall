@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Tile/RandomFloor.gd" type="Script" id=1]
+[ext_resource path="res://Tile/Ground.tscn" type="PackedScene" id=2]
+
+[node name="RandomFloor" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Ground0" parent="." index="0" instance=ExtResource( 2 )]
+
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Ground1" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 64, 0 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Ground2" parent="." index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 128, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Ground3" parent="." index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 192, 0 )
+
+[node name="Ground4" parent="." index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 256, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Ground5" parent="." index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 320, 0 )
+
+[node name="Ground6" parent="." index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 384, 0 )
+
+[node name="Ground7" parent="." index="7" instance=ExtResource( 2 )]
+
+position = Vector2( 448, 0 )
+
+[node name="Ground8" parent="." index="8" instance=ExtResource( 2 )]
+
+position = Vector2( 512, 0 )
+
+[node name="Ground9" parent="." index="9" instance=ExtResource( 2 )]
+
+position = Vector2( 576, 0 )
+
+[node name="Ground10" parent="." index="10" instance=ExtResource( 2 )]
+
+position = Vector2( 640, 0 )
+
+[node name="Ground11" parent="." index="11" instance=ExtResource( 2 )]
+
+position = Vector2( 704, 0 )
+
+[node name="Ground12" parent="." index="12" instance=ExtResource( 2 )]
+
+position = Vector2( 768, 0 )
+
+[node name="Ground13" parent="." index="13" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 0 )
+
+[node name="Ground14" parent="." index="14" instance=ExtResource( 2 )]
+
+position = Vector2( 896, 0 )
+
+[node name="Ground15" parent="." index="15" instance=ExtResource( 2 )]
+
+position = Vector2( 960, 0 )
+
+[node name="Ground16" parent="." index="16" instance=ExtResource( 2 )]
+
+position = Vector2( 1024, 0 )
+
+
