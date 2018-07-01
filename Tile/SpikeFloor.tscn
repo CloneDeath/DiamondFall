@@ -233,6 +233,8 @@ position = Vector2( 960, 1152 )
 
 [node name="Spikes" type="Node2D" parent="." index="3"]
 
+editor/display_folded = true
+
 [node name="Spike" parent="Spikes" index="0" instance=ExtResource( 3 )]
 
 position = Vector2( 64, 1088 )
@@ -292,5 +294,26 @@ position = Vector2( 896, 1088 )
 [node name="Spike15" parent="Spikes" index="14" instance=ExtResource( 3 )]
 
 position = Vector2( 960, 1088 )
+
+[node name="GameOverLabel" type="Label" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 1024.0
+margin_right = 521.0
+margin_bottom = 1038.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Game Over"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 
